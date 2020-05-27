@@ -1,0 +1,36 @@
+git init-y
+
+npm init -y
+npm install socket.io
+
+touch gitignore => node modules
+
+git add .
+git commit -m "added for deploy "
+
+new repository bnao => uske 2 lines of code command mei likhdo
+git remote add origin https://github.com/Mohitmotwani00/WHITEBOARD.git
+git push -u origin master
+
+git remote add origin https://github.com/Mohitmotwani00/NEW-WHITEBOARD.git
+git push -u origin master
+
+package.json mei => script mei => start =>"node express.js"
+
+express file mei =>
+const port = process.env.PORT||3000;
+server.listen(port, function () {
+    console.log("Server started at port 3000")
+})
+
+git add .
+git commit -m "added for deploy "
+git push
+
+heroku mei deploy krdo
+
+public mei tools.js mei jakr => const socket = io.connect("https://whiteboard0.herokuapp.com/");
+
+agr deploy krne pr errors ayenghe to => install heroku CLI
+cmd => 1.Heroku login
+       2. Heroku logs --tail -a "appname"
